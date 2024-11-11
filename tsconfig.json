@@ -3,15 +3,28 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+      "@/*": ["./*"]
+    },
+    "baseUrl": ".",                    // Allows absolute imports from the root
+    "jsx": "react-native",              // Set to `react-native` for React Native projects
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,            // Helps with importing commonJS modules
+    "skipLibCheck": true,               // Speeds up build time by skipping type checking of declaration files
+    "forceConsistentCasingInFileNames": true,  // Ensures consistent file name casing
+    "noImplicitAny": true,              // Requires all types to be explicit
+    "noUnusedLocals": true,             // Highlights unused local variables
+    "noUnusedParameters": true,         // Highlights unused function parameters
+    "moduleResolution": "node"          // Use Node-style module resolution
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
   ]
 }
