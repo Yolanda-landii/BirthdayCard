@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# Birthday Card App 🎂
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful and user-friendly mobile app for creating and managing birthday cards. Built with React Native and Expo.
 
-## Get started
+## Features
+
+- Create beautiful birthday cards with custom messages and images
+- Preview cards before saving
+- Edit and delete existing cards
+- Beautiful UI with modern design
+- Responsive layout that works on all screen sizes
+- Persistent storage of cards
+
+## Screens
+
+1. **Home Screen**
+   - Welcome message
+   - Quick access to create new cards
+   - View existing cards
+
+2. **Card Editor**
+   - Add recipient's name
+   - Write a personalized message
+   - Add a birthday image
+   - Preview the card
+
+3. **Card List**
+   - View all created cards
+   - Beautiful card previews
+   - Easy navigation to card details
+
+4. **Card Detail**
+   - View full card with image
+   - Edit or delete options
+   - Beautiful card layout
+
+## Getting Started
 
 1. Install dependencies
-
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. Start the development server
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Run the app
+   - Press `a` to run on Android
+   - Press `i` to run on iOS
+   - Scan the QR code with Expo Go app on your phone
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technologies Used
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native
+- Expo
+- TypeScript
+- React Navigation
+- AsyncStorage for data persistence
 
-## Get a fresh project
+## Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+├── app/                  # Main application code
+│   ├── Screens/         # Screen components
+│   └── (tabs)/         # Navigation configuration
+├── components/          # Reusable components
+├── Styles/             # Global styles
+└── assets/             # Static assets
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contributing
 
-## Learn more
+Feel free to submit issues and enhancement requests!
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is open source and available under the MIT License.
